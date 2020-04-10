@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity">
+
+    <View
+        android:id="@+id/viewNome"
+        android:layout_width="360dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/backperfil2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemredonda" />
+
+    <View
+        android:id="@+id/viewEmail"
+        android:layout_width="360dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/backperfil2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewNome" />
+
+    <View
+        android:id="@+id/viewTelefone"
+        android:layout_width="360dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/backperfil2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewEmail" />
+
+    <!--    VER GRADLE, IMPORTEI API PARA DEIXAR REDONDO-->
+
+    <View
+        android:id="@+id/viewAvalia"
+        android:layout_width="360dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/backperfil2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTelefone" />
+
+    <View
+        android:id="@+id/viewGenero"
+        android:layout_width="360dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backperfil2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTelefone" />
+
+    <TextView
+        android:id="@+id/textoNome2"
+        android:layout_width="208dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="52dp"
+        android:gravity="end"
+        android:hint="Nome"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemredonda" />
+
+    <TextView
+        android:id="@+id/textoEmail2"
+        android:layout_width="208dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:hint="Email"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoNome2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagemredonda"
+        android:layout_width="174dp"
+        android:layout_height="165dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/ButSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="SAIR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar2"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <TextView
+        android:id="@+id/textViewTelefone"
+        android:layout_width="208dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="end"
+        android:hint="Telefone"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoEmail2" />
+
+    <TextView
+        android:id="@+id/textViewGenero"
+        android:layout_width="208dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:gravity="end"
+        android:hint="Genero"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefone" />
+
+    <TextView
+        android:id="@+id/textAvalia"
+        android:layout_width="372dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Minha Avaliação"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefone" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="PERFIL"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textUSERNAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="52dp"
+        android:text="Nome"
+        android:textColor="@color/perfilCorresponde"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemredonda" />
+
+    <TextView
+        android:id="@+id/textEMAIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="@color/perfilCorresponde"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoNome2" />
+
+    <TextView
+    android:id="@+id/textTELEFONE"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="48dp"
+    android:layout_marginLeft="48dp"
+    android:layout_marginTop="24dp"
+    android:text="Telefone"
+    android:textColor="@color/perfilCorresponde"
+    android:textSize="17dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textoEmail2" />
+
+    <TextView
+        android:id="@+id/textGENERO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Genero"
+        android:textColor="@color/perfilCorresponde"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTELEFONE" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:numStars="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewAvalia" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

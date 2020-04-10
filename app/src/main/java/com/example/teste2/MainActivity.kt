@@ -4,25 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.webkit.WebSettings
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.annotation.RestrictTo
-import com.bumptech.glide.Glide
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.Scopes
-import com.google.android.gms.common.Scopes.PLUS_ME
-import com.google.android.gms.common.Scopes.PROFILE
 import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.common.api.Scope
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,12 +29,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        var num1 = 0
-
-        num1 = 3
-
-
 
         signInButton = findViewById(R.id.google)
 
@@ -124,7 +107,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun chamar(){
-        val intent2 = Intent(this, ShowGoogleInfo::class.java)
+        val intent2 = Intent(this, PerfilActivity::class.java)
         startActivity(intent2)
     }
 }

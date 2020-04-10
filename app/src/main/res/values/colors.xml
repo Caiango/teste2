@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#FF8AB0</color>
-    <color name="main">#e1d012</color>
-    <color name="Letra">#FFFFFF</color>
+    <color name="colorPrimary">#C88BFF</color>
+    <color name="colorPrimaryDark">#E4EEC2FF</color>
+    <color name="colorAccent">#E4EEC2FF</color>
+    <color name="back">#E4EEC2FF</color>
+    <color name="perfilCorresponde">#E4EEC2FF</color>
+    <color name="backView">#D5F6ECFF</color>
 </resources>

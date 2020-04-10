@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">teste2</string>
-    <string name="app_name">teste2</string>
-    <string name="app_name">teste2</string>
-    <string name="app_name">teste2</string>
+    <string name="app_name">Diaristas</string>
+    <string name="intro">Please click on the buttom above to create an account or use an existing one</string>
 </resources>

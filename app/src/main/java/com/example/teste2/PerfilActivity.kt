@@ -5,16 +5,15 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.RatingBar
 import android.widget.TextView
-import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_show_google_info.*
+import kotlinx.android.synthetic.main.activity_perfil.*
 
-class ShowGoogleInfo : AppCompatActivity() {
+class PerfilActivity : AppCompatActivity() {
 
     lateinit var etNome2: TextView
 
@@ -26,13 +25,15 @@ class ShowGoogleInfo : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_show_google_info)
+        setContentView(R.layout.activity_perfil)
 
         etNome2 = findViewById(R.id.textoNome2)
 
-        imgFoto2 = findViewById(R.id.imagemtest2)
+        imgFoto2 = findViewById(R.id.imagemredonda)
 
         etEmail2 = findViewById(R.id.textoEmail2)
+
+
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
@@ -59,9 +60,7 @@ class ShowGoogleInfo : AppCompatActivity() {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)}
 
-            imageButtonVoltar.setOnClickListener{googleSignInClient.signOut()
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)}
+
 
             }
         }
